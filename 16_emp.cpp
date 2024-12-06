@@ -25,10 +25,6 @@ int main()
 {
     emp e1, e2, e3;
     e1.setemp();
-    e2.setemp();
-    e3.setemp();
     e1.displayemp();
-    e2.displayemp();
-    e3.displayemp();
     return 0;
 }

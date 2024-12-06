@@ -5,13 +5,28 @@ class student
   string name;
   int rno;
   float per;
+  bool check_string_alphabet(string s)//Chetan
+  {
+    int i;
+    for(i=0;s[i]!='\0';i++)
+    {
+      if(!(s[i]>='a' && s[i]<='z' || s[i]>='A' && s[i]<='Z'))
+      {
+        return false;
+      }
+    }
+    return true;
+  }
 
 public:
   void setstudent(string s1, int a, float b)
   {
-    name = s1;
-    rno = a;
-    per = b;
+    if (check_string_alphabet(s1))
+    {
+      name = s1;
+      rno = a;
+      per = b;
+    }
   }
   void displayresult()
   {
