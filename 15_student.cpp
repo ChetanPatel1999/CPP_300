@@ -57,6 +57,16 @@ public:
     cout << "inside class we have 6 methods" << endl;
     cout << "thanks for using our class" << endl;
   }
+  static void average(student obj1, student obj2)
+  {
+    float av = (obj1.per + obj2.per) / 2;
+    cout << "average percent of " << obj1.name << " and " << obj2.name << " = " << av << endl;
+  }
+  static void average(student obj1, student obj2, student obj3)
+  {
+    float av = (obj1.per + obj2.per+ obj3.per) / 3;
+    cout << "average percent of " << obj1.name << " and " << obj2.name<< " and " << obj3.name << " = " << av << endl;
+  }
 };
 int student::totalpass = 0;
 int student::totalfail = 0;
@@ -78,5 +88,8 @@ int main()
   s4.displayresult();
   student::totalresult();
   student::classinfo();
+  student::average(s1, s2);
+  student::average(s2, s3);
+  student::average(s1, s2, s3);
   return 0;
 }
