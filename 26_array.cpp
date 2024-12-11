@@ -1,3 +1,4 @@
+// object array
 #include <iostream>
 using namespace std;
 class emp
@@ -6,13 +7,10 @@ class emp
     float sal;
 
 public:
-    emp()
+    emp(int a)
     {
-        cout << "enter emp info :" << endl;
-        cout << "enter emp id : ";
-        cin >> id;
-        cout << "enter emp sal : ";
-        cin >> sal;
+       id=a;
+       sal=500;
     }
     void displayemp()
     {
@@ -23,7 +21,11 @@ public:
 };
 int main()
 {
-    emp e1;
-    e1.displayemp();
+    emp e[3]={101,202,303};
+    int i;
+    for (i = 0; i < 3; i++)
+    {
+        e[i].displayemp();
+    }
     return 0;
 }

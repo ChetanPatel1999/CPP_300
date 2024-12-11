@@ -8,7 +8,7 @@ class dog
     string breed;
 
 public:
-    void setdog(string s1, string s2, int a, string s3)
+    dog(string s1, string s2, int a, string s3)
     {
         name = s1;
         color = s2;
@@ -27,18 +27,17 @@ public:
 };
 int main()
 {
-    dog d1, d2, d3;
-    d1.setdog("tommy", "red", 12, "lebra");
+    dog d1("tommy", "red", 12, "lebra");
 
-    d2.setdog("wifi", "white", 5, "lebra");
+    dog d2("wifi", "white", 5, "lebra");
 
-    d3.setdog("moti", "black", 10, "jurmen sepherd");
+    dog d3("moti", "black", 10, "jurmen sepherd");
 
     d1.displaydog();
 
     d2.displaydog();
 
     d3.displaydog();
-    
+
     return 0;
 }

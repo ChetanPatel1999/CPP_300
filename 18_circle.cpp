@@ -8,11 +8,11 @@ class circle
     float circumference;
 
 public:
-    void setradius(float);
+    circle(float);
     void calculate_area();
     void caluclate_circumference();
 };
-void circle::setradius(float r) // (::  scop resolution operator)
+circle::circle(float r) // (::  scop resolution operator)
 {
     radius = r;
 }
@@ -32,10 +32,7 @@ void circle::caluclate_circumference()
 
 int main()
 {
-    circle c1, c2, c3;
-    c1.setradius(5);
-    c2.setradius(4);
-    c3.setradius(3);
+    circle c1(5), c2(9), c3(4);
     c1.calculate_area();
     c2.calculate_area();
     c3.calculate_area();

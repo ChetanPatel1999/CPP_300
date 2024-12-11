@@ -7,7 +7,7 @@ class emp
     float sal;
 
 public:
-    void setemp()
+    emp()
     {
         cout << "enter emp info :" << endl;
         cout << "enter emp id : ";
@@ -26,10 +26,6 @@ int main()
 {
     emp e[3];
     int i;
-    for (i = 0; i < 3; i++)
-    {
-        e[i].setemp();
-    }
     for (i = 0; i < 3; i++)
     {
         e[i].displayemp();

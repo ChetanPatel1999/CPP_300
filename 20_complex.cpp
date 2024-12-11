@@ -3,12 +3,13 @@
 using namespace std;
 class complex
 {
-    public:
+public:
     int real;
     int image;
 
 public:
-    void setcomplex(int a, int b)
+    complex() {}
+    complex(int a, int b)
     {
         real = a;
         image = b;
@@ -27,9 +28,7 @@ public:
 };
 int main()
 {
-    complex c1, c2, c3;
-    c1.setcomplex(12, 8);
-    c2.setcomplex(5, 4);
+    complex c1(12, 5), c2(4, 7), c3;
     c1.displaycomplex();
     c2.displaycomplex();
     c3 = c1.sum(c2);

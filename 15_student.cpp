@@ -11,7 +11,7 @@ class student
   static string class_teacher;
 
 public:
-  void setstudent(string s1, int a, float b)
+  student(string s1, int a, float b)
   {
     name = s1;
     rno = a;
@@ -74,11 +74,10 @@ int student::totalcount = 0;
 string student::class_teacher = "teena sharma";
 int main()
 {
-  student s1, s2, s3, s4;
-  s1.setstudent("ram", 101, 45);
-  s2.setstudent("shyam", 102, 23);
-  s3.setstudent("rohit", 103, 12);
-  s4.setstudent("aman", 104, 4);
+  student s1("ram", 101, 45);
+  student s2("shyam", 102, 23);
+  student s3("rohit", 103, 12);
+  student s4("aman", 104, 4);
   student::disp_class_teacher();
   s1.displayresult();
   s2.displayresult();
