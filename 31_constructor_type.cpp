@@ -5,7 +5,12 @@ class number
     int num1;
     int num2;
     public:
-    number(int a=12,int b=90)// default constructor
+    number() // non parameterized constructor
+    {
+      num1=66;
+      num2=88;  
+    }
+    number(int a,int b)// paramterized constructor
     {
         num1=a;
         num2=b;
