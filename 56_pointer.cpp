@@ -22,9 +22,18 @@ public:
 };
 int main()
 {
-    emp *ptr = new emp[5];
+    emp *ptr = new emp[3];
+    emp *temp=ptr;
     ptr->setdata(101,4000);
     ptr++;
     ptr->setdata(102,6000);
+    ptr++;
+    ptr->setdata(103,10000);
+    ptr=temp;
+    ptr->displayemp();
+    ptr++;
+    ptr->displayemp();
+    ptr++;
+    ptr->displayemp();
     return 0;
 }

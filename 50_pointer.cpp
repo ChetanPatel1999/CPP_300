@@ -10,5 +10,8 @@ int main()
     cout << "val of ptr : " << (*ptr) << endl;
     cout << "val of a : " << (*a) << endl;
     cout << "val of f : " << (*f) << endl;
+    delete ptr;
+    delete a;
+    delete f;
     return 0;
 }

@@ -8,5 +8,6 @@ int main()
   cout<<"val of a : "<<(*ptr)<<endl;
   cout<<"add of a : "<<(&a)<<endl;
   cout<<"add of a : "<<(ptr)<<endl;
+  
   return 0;
 }
