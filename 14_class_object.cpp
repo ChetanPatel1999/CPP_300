@@ -8,20 +8,20 @@ class dog
     string breed;
 
 public:
-    dog(string s1, string s2, int a, string s3)
+    dog(string name, string color, int age, string breed)
     {
-        name = s1;
-        color = s2;
-        age = a;
-        breed = s3;
+        this->name = name;
+        this->color = color;
+        this->age = age;
+        this->breed = breed;
     }
     void displaydog()
     {
         cout << "dog info : " << endl;
-        cout << "dog name : " << name << endl;
-        cout << "dog color : " << color << endl;
-        cout << "dog age : " << age << endl;
-        cout << "dog breed : " << breed << endl;
+        cout << "dog name : " << this->name << endl;
+        cout << "dog color : " << this->color << endl;
+        cout << "dog age : " << this->age << endl;
+        cout << "dog breed : " << this->breed << endl;
         cout << "__________________________________" << endl;
     }
 };

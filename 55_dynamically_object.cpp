@@ -7,10 +7,10 @@ class emp
     int id;
     float sal;
 public:
-    emp(int a,float b)
+    emp(int id,float sal)
     {
-        id=a;
-        sal=b;
+        this->id=id;
+        this->sal=sal;
     }
     void displayemp()
     {
