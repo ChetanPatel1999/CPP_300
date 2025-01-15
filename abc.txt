@@ -1,0 +1,9 @@
+hi this sentence1 write by write object
+hi this sentence2 write by write object
+string variable value
+hi this sentence1 write by write object
+hi this sentence2 write by write object
+string variable value
+hi this sentence1 write by write object
+hi this sentence2 write by write object
+string variable value
